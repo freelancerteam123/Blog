@@ -1,0 +1,10 @@
+{
+  "name": "PHP",
+  "private": "true",
+  "devDependencies": {
+    
+  },
+  "dependencies": {
+    "jquery": "^3.2.1"
+  }
+}
