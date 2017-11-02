@@ -18,3 +18,9 @@ Route::get('/', function () {
 Route::get('/test', function () {
     echo trans('pagination.next');
 });
+
+// Admin Router
+
+Route::group(['prefix' => 'admin'], function () {
+    Route::get('/', 'Admin\HomeController@index');
+});
