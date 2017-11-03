@@ -1,3 +1,5 @@
+// Define rules validate for admin page
+
 RULES = {
 	email: {
         email: true,

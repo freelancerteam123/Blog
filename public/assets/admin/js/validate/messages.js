@@ -1,4 +1,4 @@
-// Define message validate
+// Define message validate for admin page
 
 function getMessageEmpty (name) {
 	return name + " không được bỏ trống."

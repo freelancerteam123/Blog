@@ -1,36 +1,38 @@
 <div id="sidebar-menu" class="main_menu_side hidden-print main_menu">
     <div class="menu_section">
-        <h3>General</h3>
+        <h3>Quản lý</h3>
         <ul class="nav side-menu">
-            <li><a><i class="fa fa-home"></i> Home <span class="fa fa-chevron-down"></span></a>
+            <li><a><i class="fa fa-newspaper-o"></i> Tin tức <span class="fa fa-chevron-down"></span></a>
                 <ul class="nav child_menu">
-                    <li><a href="index.html">Dashboard</a></li>
-                    <li><a href="index2.html">Dashboard2</a></li>
-                    <li><a href="index3.html">Dashboard3</a></li>
+                    <li><a href="index.html">Danh sách</a></li>
+                    <li><a href="index2.html">Thêm mới</a></li>
                 </ul>
             </li>
-            <li><a><i class="fa fa-home"></i> Home <span class="fa fa-chevron-down"></span></a>
+            <li><a><i class="fa fa-taxi"></i> Điểm đến <span class="fa fa-chevron-down"></span></a>
                 <ul class="nav child_menu">
-                    <li><a href="index.html">Dashboard</a></li>
-                    <li><a href="index2.html">Dashboard2</a></li>
-                    <li><a href="index3.html">Dashboard3</a></li>
+                    <li><a href="index.html">Danh sách</a></li>
+                    <li><a href="index2.html">Thêm mới</a></li>
                 </ul>
             </li>
-            <li><a><i class="fa fa-home"></i> Home <span class="fa fa-chevron-down"></span></a>
+            <li><a><i class="fa fa-bath"></i> Khách sạn <span class="fa fa-chevron-down"></span></a>
                 <ul class="nav child_menu">
-                    <li><a href="index.html">Dashboard</a></li>
-                    <li><a href="index2.html">Dashboard2</a></li>
-                    <li><a href="index3.html">Dashboard3</a></li>
+                    <li><a href="index.html">Danh sách</a></li>
+                    <li><a href="index2.html">Thêm mới</a></li>
                 </ul>
             </li>
-            <li><a><i class="fa fa-home"></i> Home <span class="fa fa-chevron-down"></span></a>
+            <li><a><i class="fa fa-camera-retro"></i> Hình ảnh, Video <span class="fa fa-chevron-down"></span></a>
                 <ul class="nav child_menu">
-                    <li><a href="index.html">Dashboard</a></li>
-                    <li><a href="index2.html">Dashboard2</a></li>
-                    <li><a href="index3.html">Dashboard3</a></li>
+                    <li><a href="index.html">Danh sách</a></li>
+                    <li><a href="index2.html">Thêm mới</a></li>
                 </ul>
             </li>
-            <li><a><i class="fa fa-home"></i> Home <span class="fa fa-chevron-down"></span></a>
+            <li><a><i class="fa fa-user-secret"></i> Quản lý admin <span class="fa fa-chevron-down"></span></a>
+                <ul class="nav child_menu">
+                    <li><a href="index.html">Danh sách</a></li>
+                    <li><a href="index2.html">Thêm mới</a></li>
+                </ul>
+            </li>
+            <li><a><i class="fa fa-laptop"></i> Giao diện <span class="fa fa-chevron-down"></span></a>
                 <ul class="nav child_menu">
                     <li><a href="index.html">Dashboard</a></li>
                     <li><a href="index2.html">Dashboard2</a></li>
@@ -40,7 +42,7 @@
         </ul>
     </div>
     <div class="menu_section">
-        <h3>Live On</h3>
+        <h3>Cấu hình chung</h3>
         <ul class="nav side-menu">
             <li><a><i class="fa fa-bug"></i> Additional Pages <span class="fa fa-chevron-down"></span></a>
                 <ul class="nav child_menu">
