@@ -1,21 +1,22 @@
 <!DOCTYPE html>
 <html lang="en">
   	<head>
-    	<title>Admin!</title>
+    	<title>@yield('title')</title>
     	@include('admin.components.define.meta')
     	@include('admin.components.define.css')
   	</head>
 
-  <body class="nav-md">
-    <div class="container body">
-        <div class="main_container">
-            @include('admin.components.menu')
-            @include('admin.components.top_nav')
-            @include('admin.components.content')
-            @include('admin.components.footer')
+    <body class="nav-md">
+        <div class="container body">
+            <div class="main_container">
+                @include('admin.components.menu')
+                @include('admin.components.top_nav')
+                @yield('content')
+                @include('admin.components.footer')
+            </div>
         </div>
-    </div>
 
-    @include('admin.components.define.javascript')
-  </body>
+        @include('admin.components.alert.message_flash')
+        @include('admin.components.define.javascript')
+    </body>
 </html>

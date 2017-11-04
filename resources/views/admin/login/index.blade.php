@@ -11,14 +11,21 @@
             <div class="login_wrapper">
                 <div class="animate form login_form">
                     <section class="login_content">
-                        <form id="login-form" novalidate method="post">
+                        <form id="login-form" novalidate method="post" action="{{route('admin.login.action')}}">
+                            {{ csrf_field() }}
                             <h1>Đăng nhập</h1>
+
                             <div>
-                                <input type="email" class="form-control" placeholder="Email" name="email" id="email" required="" />
+                                <input type="email" class="form-control" placeholder="Email" 
+                                name="email" id="email" required="" value="{{old('email')}}" />
                             </div>
                             <div>
-                                <input type="password" class="form-control" placeholder="Mật khẩu" name="password" id="password" required="" />
+                                <input type="password" class="form-control" placeholder="Mật khẩu" 
+                                name="password" id="password" required="" />
                             </div>
+
+                            @include('flash::message')
+
                             <div>
                                 <button class="btn btn-default submit" type="submit">Đăng nhập</button>
                                 <a class="reset_pass" href="#">Quên mật khẩu?</a>

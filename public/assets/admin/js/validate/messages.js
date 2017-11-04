@@ -12,7 +12,7 @@ function getMessageMaxLength (name, size) {
 	return name + " phải nhỏ hơn " + size + " ký tự";
 }
 
-MESSAGES_VALIDATE = {
+var MESSAGES_VALIDATE = {
 	email: {
 		required: getMessageEmpty("Email"),
 		email: "Hãy nhập đúng định dạng email."
@@ -22,5 +22,14 @@ MESSAGES_VALIDATE = {
 		required: getMessageEmpty("Mật khẩu"),
 		minlength: getMessageMinLength("Mật khẩu", 6),
     	maxlength: getMessageMaxLength("Mật khẩu", 32)
+	},
+
+	required: function (name) {
+		var result = {};
+		result[name] = {
+			required: getMessageEmpty(name)
+		}
+
+		return result;
 	}
 }

@@ -28,8 +28,8 @@
             </li>
             <li><a><i class="fa fa-user-secret"></i> Quản lý admin <span class="fa fa-chevron-down"></span></a>
                 <ul class="nav child_menu">
-                    <li><a href="index.html">Danh sách</a></li>
-                    <li><a href="index2.html">Thêm mới</a></li>
+                    <li><a href="{{route('admin.list')}}">Danh sách</a></li>
+                    <li><a href="{{route('admin.add')}}">Thêm mới</a></li>
                 </ul>
             </li>
             <li><a><i class="fa fa-laptop"></i> Giao diện <span class="fa fa-chevron-down"></span></a>

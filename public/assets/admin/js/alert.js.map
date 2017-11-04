@@ -1,0 +1,1 @@
+{"version":3,"sources":["alert.js"],"names":[],"mappings":"AAAA;AACA;AACA;AACA;AACA;AACA;AACA;AACA","file":"alert.js","sourcesContent":["$(document).ready(function () {\r\n\tvar message = $('.message-flash .alert');\r\n\tif (message) {\r\n\t\t$('.message-flash .alert').css('top', '58px');\r\n\t} else {\r\n\t\tconsole.log('test');\r\n\t}\r\n})"]}

@@ -1,0 +1,70 @@
+.alert-danger {
+    color: #a94442 !important;
+    background-color: #f2dede !important;
+    border-color: #ebccd1 !important;
+}
+
+.alert-info {
+    color: #31708f !important;
+    background-color: #d9edf7 !important;
+    border-color: #bce8f1 !important;
+}
+
+.center {
+	text-align: center !important;
+}
+
+form {
+	.label-form {
+		margin-bottom: 10px !important;
+	}
+}
+
+.add-admin-container {
+	form {
+		input[type="checkbox"] {
+		    position: relative;
+		    top: 3px;
+		    left: 10px;
+		}
+	}
+}
+
+.message-flash {
+	.alert {
+	    position: fixed;
+	    top: 0;
+	    right: calc(50% - 150px);
+	    margin: 0 !important;
+	    border-radius: 0;
+	    opacity: 1 !important;
+	    font-size: 18px;
+	    transition: top 0.5s;
+	}
+}
+
+.form-validate {
+	.error {
+		color: red;
+		margin-top: 10px;
+	}
+}
+
+.filter-item {
+    margin-bottom: 10px;
+    padding: 6px 0px;
+
+    .title {
+        font-size: 14px;
+    }
+}
+
+input[type="checkbox"].custom {
+    position: relative;
+    top: 3px;
+    left: 10px;
+}
+
+input[type="number"].form-number {
+	width: 100px;
+}

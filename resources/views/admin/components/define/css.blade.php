@@ -8,3 +8,4 @@
 <link rel="stylesheet" href="{{ url('assets/bower_components/jqvmap/dist/jqvmap.min.css') }}">
 <link rel="stylesheet" href="{{ url('assets/bower_components/jqvmap/dist/jqvmap.min.css') }}"> -->
 <link rel="stylesheet" href="{{ url('assets/css/custom.min.css') }}">
+<link rel="stylesheet" href="{{ url('assets/admin/css/app.css') }}">

@@ -11,7 +11,7 @@
         </div>
         <div class="profile_info">
             <span>Xin chào,</span>
-            <h2>Nguyễn Song Hào</h2>
+            <h2>{{Auth::user()['name']}}</h2>
         </div>
     </div>
     <br />
