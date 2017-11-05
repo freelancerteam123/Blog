@@ -7,4 +7,9 @@ $('.must-checked-one input[type="checkbox"]').change(function (e) {
 		$(this).prop('checked', true);
     }
 })
+
+// Remove params null in url
+$('#form-filter-user').submit(function () {
+	$(':input[value=""]').attr('disabled', true);
+})
 //# sourceMappingURL=form.js.map

@@ -47,4 +47,21 @@ input[type="checkbox"].custom {
 input[type="number"].form-number {
   width: 100px; }
 
+.multi-image-component .btn-clear-all {
+  display: none; }
+
+.multi-image-component .list-multi-image {
+  display: none;
+  margin: 0;
+  padding: 0;
+  border: 1px solid #ddd;
+  padding: 20px 0px;
+  margin-top: 20px; }
+  .multi-image-component .list-multi-image .card {
+    margin-bottom: 30px; }
+    .multi-image-component .list-multi-image .card img {
+      width: 100%; }
+    .multi-image-component .list-multi-image .card .card-block {
+      margin-top: 10px; }
+
 /*# sourceMappingURL=app.css.map */
