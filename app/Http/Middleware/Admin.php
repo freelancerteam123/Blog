@@ -4,6 +4,8 @@ namespace App\Http\Middleware;
 
 use Closure;
 use Auth;
+use Carbon\Carbon;
+use App\User;
 
 // Check authenticate for admin
 
@@ -21,6 +23,8 @@ class Admin {
             return redirect()->route('admin.login.show');
         }
 
+        // Save time admin
+        User::updateLastActive(Auth::user()['id']);
         return $next($request);
     }
 }

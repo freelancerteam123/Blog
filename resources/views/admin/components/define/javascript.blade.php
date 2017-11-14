@@ -20,6 +20,7 @@
 <script src="{{ url('assets/bower_components/jqvmap/examples/js/jquery.vmap.sampledata.js') }}"></script> -->
 <script src="{{ url('assets/bower_components/moment/min/moment.min.js') }}"></script>
 <script src="{{ url('assets/bower_components/jquery-validation/dist/jquery.validate.min.js') }}"></script>
+<script src="{{ url('assets/bower_components/dropzone/dist/min/dropzone.min.js') }}"></script>
 <script src="{{ url('assets/js/custom.min.js') }}"></script>
 <script src="{{ url('assets/admin/js/validate.js') }}"></script>
 <script src="{{ url('assets/admin/js/form.js') }}"></script>

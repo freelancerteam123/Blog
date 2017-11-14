@@ -157,6 +157,7 @@ return [
         App\Providers\EventServiceProvider::class,
         App\Providers\RouteServiceProvider::class,
         App\Providers\UtilServiceProvider::class,
+        Bogardo\Mailgun\MailgunServiceProvider::class,
 
     ],
 
@@ -203,7 +204,8 @@ return [
         'URL' => Illuminate\Support\Facades\URL::class,
         'Validator' => Illuminate\Support\Facades\Validator::class,
         'View' => Illuminate\Support\Facades\View::class,
-        'UtilHelper' => App\Helpers\UtilHelper::class
+        'UtilHelper' => App\Helpers\UtilHelper::class,
+        'Mailgun' => Bogardo\Mailgun\Facades\Mailgun::class
     ],
 
 ];

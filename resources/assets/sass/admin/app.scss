@@ -68,3 +68,28 @@ input[type="checkbox"].custom {
 input[type="number"].form-number {
 	width: 100px;
 }
+
+.multi-image-component {
+	.btn-clear-all {
+		display: none;
+	}
+	
+	.list-multi-image {
+		display: none;
+		margin: 0;
+	    padding: 0;
+	    border: 1px solid #ddd;
+    	padding: 20px 0px;
+	    margin-top: 20px;
+	    .card {
+	    	margin-bottom: 30px;
+	    	img {
+				width: 100%;
+			}
+
+			.card-block {
+				margin-top: 10px;
+			}
+		}
+	}
+}

@@ -3,6 +3,7 @@
 namespace App;
 
 use Illuminate\Foundation\Auth\User as Authenticatable;
+use Carbon\Carbon;
 
 class User extends Authenticatable {
     /**
@@ -25,21 +26,25 @@ class User extends Authenticatable {
 
     public static function search ($query) {
         $pagination = $query['pagination'];
-        $name = $query['name'];
         $active = isset($query['active']) ? $query['active'] : null;
         $inactive = isset($query['inactive']) ? $query['inactive'] : null;
         $search = User::where('isSupperAdmin', 0);
 
-        if ($name) {
+        if (isset($query['name'])) {
+            $name = $query['name'];
             $search = $search->where('name', 'like', '%' . $name . '%')
                 ->orWhere('email', 'like', '%' . $name . '%');
         }
 
-        if (!$active || !$inactive) {
+        if ((!$active && $inactive) || ($active && !$inactive)) {
             $status = $active && !$inactive ? 1 : 0;
             $search = $search->where('status', $status);
         }
 
         return $search->paginate($pagination);
+    }
+
+    public static function updateLastActive ($id) {
+        User::where('id', $id)->update(['last_active' => Carbon::now()]);
     }
 }

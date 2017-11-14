@@ -34,6 +34,7 @@ elixir(function(mix) {
     ], 'public/assets/admin/js/form.js');
 
     mix.scripts([
-        'admin/main/alert.js'
+        'admin/main/alert.js',
+        'admin/main/multi_image.js',
     ], 'public/assets/admin/js/alert.js');
 });

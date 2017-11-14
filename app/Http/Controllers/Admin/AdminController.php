@@ -12,6 +12,7 @@ class AdminController extends Controller {
 
     public function showList () {
     	$users = User::where('status', 1)
+            ->where('isSupperAdmin', 0)
             ->paginate(config('constants.ADMIN.PAGINATION'));
     	return view('admin.admin.list.index')->with('users', $users)->with('query', []);
     }
@@ -37,9 +38,10 @@ class AdminController extends Controller {
     	}
     }
 
-    public function actionDelete (Request $request) {
+    public function actionChangeStatus (Request $request) {
         $id = $request->id;
-        if (User::where('id', $id)->update(['status' => 0])) {
+        $status = $request->status ? 0 : 1;
+        if (User::where('id', $id)->update(['status' => $status])) {
             flash("Khóa tài khoản thành công!");
             return redirect()->back();
         } else {

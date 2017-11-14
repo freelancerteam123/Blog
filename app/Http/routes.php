@@ -23,11 +23,25 @@ Route::group(['prefix' => 'admin'], function () {
 		Route::get('/list', ['as' => 'admin.list', 'uses' => 'Admin\AdminController@showList']);
 		Route::get('/add', ['as' => 'admin.add', 'uses' => 'Admin\AdminController@showAdd']);
 		Route::post('/add', ['as' => 'admin.add.action', 'uses' => 'Admin\AdminController@actionAdd']);
-		Route::post('/delete', ['as' => 'admin.delete', 'uses' => 'Admin\AdminController@actionDelete']);
+		Route::post('/delete', ['as' => 'admin.change.status', 'uses' => 'Admin\AdminController@actionChangeStatus']);
 		Route::get('/search', ['as' => 'admin.search', 'uses' => 'Admin\AdminController@actionSearch']);
+
+		Route::group(['prefix' => 'restaurant'], function () {
+			Route::get('/add', ['as' => 'admin.restaurant.add', 'uses' => 'Admin\RestaurantController@showAdd']);
+		});
+
+		Route::group(['prefix' => 'supplier'], function () {
+			Route::get('/list', ['as' => 'admin.supplier.list', 'uses' => 'Admin\SupplierController@showList']);
+			Route::get('/add', ['as' => 'admin.supplier.add', 'uses' => 'Admin\SupplierController@showAdd']);
+		});
+
+		Route::group(['prefix' => 'type'], function () {
+			Route::get('/list', ['as' => 'admin.type.list', 'uses' => 'Admin\TypeController@showList']);
+			Route::get('/add', ['as' => 'admin.type.add', 'uses' => 'Admin\TypeController@showAdd']);
+		});
 	});
 
     Route::get('/login', ['as' => 'admin.login.show', 'uses' => 'Admin\AuthController@showLogin']);
     Route::post('/login', ['as' => 'admin.login.action', 'uses' => 'Admin\AuthController@actionLogin']);
-    Route::get('/test', 'Admin\AuthController@createUser');
+    Route::get('/logout',  ['as' => 'admin.logout', 'uses' => 'Admin\AuthController@actionLogout']);
 });

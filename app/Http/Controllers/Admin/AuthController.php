@@ -28,4 +28,19 @@ class AuthController extends Controller {
 		return Auth::attempt(['email' => $user['email'], 'password' => $user['password']]);
 	}
 
+	public function createUserAdmin () {
+		User::create([
+			'name'=> 'Nguyễn Song Hào',
+			'email'=> 'nguyensonghao974@gmail.com',
+			'password' => bcrypt('123456'),
+			'isSupperAdmin' => 1,
+			'status' => 1
+		]);
+	}
+
+	public function actionLogout () {
+		Auth::logout();
+		return redirect()->route('admin.login.show');
+	}
+
 }
